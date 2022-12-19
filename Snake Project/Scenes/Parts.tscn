@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20, 20 )
+
+[node name="Parts" type="Node2D"]
+
+[node name="SnakeArea" type="Area2D" parent="."]
+
+[node name="Hitbox" type="CollisionShape2D" parent="SnakeArea"]
+position = Vector2( 20, 20 )
+shape = SubResource( 1 )
